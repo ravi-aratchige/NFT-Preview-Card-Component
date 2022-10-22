@@ -27,7 +27,7 @@ body {
 }
 #nftPreview i {
     position: absolute;
-    z-index: 0; /* set to -1 to hide */
+    z-index: -1; /* set to -1 to hide */
     color:white;
 }
 .cardHeader h2 {
@@ -92,4 +92,7 @@ hr {
 }
 #creator a:hover {
     color: #16f8f2;
+}
+#nftPreview i:hover {
+    z-index: 1; /* set to -1 to hide */
 }
