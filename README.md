@@ -5,4 +5,5 @@ This is a card component for previewing an NFT. This uses the Equilibrium NFT se
 This card component's assets and design can be found on <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">frontendmentor.io</a>
 
 ## TO-DO
-Fix mobile responsivity
+Fix mobile responsivity<br>
+Correct alignment of creator details
