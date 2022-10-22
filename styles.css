@@ -3,6 +3,7 @@ body {
     display: flex;
 	align-items: center;
 	justify-content: center;
+    z-index: 0;
 }
 #card {
     z-index: 1;
@@ -24,15 +25,21 @@ body {
     margin-right: auto;
     width: 100%;
 }
-#nftPreview {
+#imgOverlay {
     display: flex;
 	align-items: center;
 	justify-content: center;
-}
-#nftPreview i {
     position: absolute;
-    z-index: -1; /* set to -1 to hide */
+    background-color: rgba(22, 248, 242, 0);
+    opacity: 0;
+    height: 320px;
+    width: 320px;
+}
+#imgOverlay i {
+    position: absolute;
+    z-index: 0; /* set to -1 to hide */
     color:white;
+    opacity: 1;
 }
 
 /* Card title and details */
@@ -100,6 +107,11 @@ hr {
 
 /* HOVER STATES */
 
+div#imgOverlay:hover {
+    opacity: 1;
+    background-color: rgba(22, 248, 242, 0.3);
+    z-index: 2;
+}
 .cardHeader h2 a:hover {
     color: #16f8f2;
 }
